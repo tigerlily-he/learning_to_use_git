@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>A Beautiful Chart</title>
+
+    <!-- Some style sheets default to the Mapzen admin website -->
+    <link rel="stylesheet" media="all" href="https://mapzen.com/common/styleguide/styles/developer.css">
+    <link rel="stylesheet" media="screen" href="https://mapzen.com/common/admin/assets/bootstrap-sortable.min.css">
+    <link rel="stylesheet" media="screen" href="https://mapzen.com/common/admin/assets/c3.min.css">
+
+    <meta name="csrf-token" content="ohJA8da2cHAuBK1znpZ/yCTxo1o1T0zSaQ9KZ56nvqMbhTxfi5qz1oBliaq415gZoq8jXB5Bvenh4FHuOuio5A==">
+
+    <!-- <script src="/vendor/js/jquery-2.1.4.min.js"></script> -->
+
+    <!--Load c3.css and d3.js and c3.js-->
+    <link href="c3-0.4.11/c3.css" rel="stylesheet" type="text/css">
+
+    <!-- Load d3.js and c3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.0.0/d3.js"> </script>
+    <script src="c3-0.4.11/c3.min.js"></script>
+
+    <script>
+
+      var chart = c3.generate({
+          data: {
+              xs: {
+                  'Apples': 'x1',
+                  'Oranges': 'x2',
+              },
+              columns: [
+                  ['x1', 10, 30, 45, 50, 70, 100],
+                  ['x2', 30, 50, 75, 100, 120],
+                  ['Apples', 30, 200, 100, 400, 150, 250],
+                  ['Oranges', 20, 180, 240, 100, 190]
+              ]
+          }
+      });
+    </script>
+
+
+  </head>
+  <body>
+  
+    <h1> A Chart Should Appear Below </h1>
+    <h2> Hopefully a line graph <h2>
+    <h3> With made up data </h3>
+    <h4> Wait...I don't see this. </h4>
+    <p> Is this working? </p>
+
+
+    <div id="chart"></div>
+
+<!--`
+    <script src="https://mapzen.com/common/admin/assets/moment.min.js"></script>
+    <script src="https://mapzen.com/common/admin/assets/d3.min.js"></script>
+    <script src="https://mapzen.com/common/admin/assets/c3.min.js"></script>
+    <script src="https://mapzen.com/common/admin/assets/bootstrap-sortable.min.js"></script>
+   <script src="/dist/developer_admin.min.js"></script>
+    <script src="https://mapzen.com/common/styleguide/scripts/mapzen-styleguide.min.js"></script>
+    -->
+  </body>
+</html>
