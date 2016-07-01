@@ -18,9 +18,22 @@
     <link href="c3-0.4.11/c3.css" rel="stylesheet" type="text/css">
 
     <!-- Load d3.js and c3.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.0.0/d3.js"> </script>
-    <script src="c3-0.4.11/c3.min.js"></script>
 
+    <script src="c3-0.4.11/c3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"> </script>
+
+
+  </head>
+  <body>
+
+    <h1> A Chart Should Appear Below </h1>
+    <h2> Hopefully a line graph <h2>
+    <h3> With fake data </h3>
+    <h4> Hurrah! Success. </h4>
+    <p> A gorgeous chart indeed </p>
+
+
+    <div id="chart"></div>
     <script>
 
       var chart = c3.generate({
@@ -38,19 +51,6 @@
           }
       });
     </script>
-
-
-  </head>
-  <body>
-  
-    <h1> A Chart Should Appear Below </h1>
-    <h2> Hopefully a line graph <h2>
-    <h3> With made up data </h3>
-    <h4> Wait...I don't see this. </h4>
-    <p> Is this working? </p>
-
-
-    <div id="chart"></div>
 
 <!--`
     <script src="https://mapzen.com/common/admin/assets/moment.min.js"></script>
